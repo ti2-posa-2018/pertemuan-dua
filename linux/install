@@ -1,0 +1,30 @@
+Sebelum menginstall sistem operasi Ubuntu 16.04.4 LTS desktop, ada beberapa hal yang perlu Anda persiapkan dan perhatikan yaitu:
+Siapkan flashdisk kosong dengan kapasitas storage minimal 4GB. 
+Jika Anda akan menginstal Ubuntu pada laptop, pastikan baterai Anda tidak habis saat proses instalasi dengan mencolokkan charger Anda segera. 
+Siapkan software untuk membuat bootable USB flashdisk seperti Rufus (saya biasanya menggunakan ini). 
+Siapkan file ISO Ubuntu 16.04.4 LTS Desktop yang Anda sudah Anda download sebelumnya. 
+Terakhir, buatlah bootable USB flashdisk menggunakan Rufus dengan memasukkan file ISO Ubuntu 16.04.4 LTS Desktop. Untuk tutorial cara membootable flashdisk menggunakan Rufus bisa anda. 
+Nah, setelah Anda menyiapkan bootable USB flashdisk, sekarang saatnya Anda menginstall Ubuntu pada laptop/PC Anda. Perhatikan langkah-langkah dibawah ini.
+1. Colokkan flashdisk ke laptop Anda. Restart komputer Anda lalu tekan F2, Esc, F12 atau tombol lainnya (tergantung pada pengaturan PC/ laptop masing-masing) untuk masuk ke BIOS komputer.
+2. Setelah masuk ke BIOS, pilih tab “Boot“. Nah, pada Boot Option Priorities, tempatkan bootable flashdisk di posisi teratas seperti pada gambar dibawah ini. Sedangkan, untuk yang lainnya hanya mengikut saja yang terpenting hanya bootable flashdisk.<p>
+
+			<p>3. Pilih tab Save and Exit, tekan Enter pada opsi Save and Exit maka laptop/PC akan restart secara otomatis atau tekan tombol F10 pada keyboard.
+4. Selanjutnya, tunggu loading proses penginstalan Ubuntu.
+5. Pilih bahasa yang akan digunakan selama proses instalasi. Disini, saya memilih English (default) agar lebih bisa dimengerti. Lalu, klik Install Ubuntu.
+6. Jika Anda terkoneksi dengan internet, Anda dapat mencentang pada bagian Install third-party software for graphics dan Wi-Fi hardware, Flash, MP3 and other media. Anda juga dapat mencentang bagian Download update while installing Ubuntu jika Anda yakin koneksi internet Anda kencang karena jika Anda memilih opsi ini maka proses instalasi berjalan lama karena sekalian update dan kemungkinan bisa error jika tiba-tiba koneksi internet terputus. Lalu, klik Continue. Tapi, jika Anda tidak memiliki koneksi internet, langsung saja klik Continue tanpa perlu mencentang apapun.
+7. Di bagian Installation type, pilih Something else lalu klik Continue. Anda dapat memilih opsi lain sesuai kebutuhan Anda, disini saya memilih Something else agar saya dapat membuat partisi saya sendiri jadi data di Windows (karena laptop saya dual-boot) tidak terformat.
+8. Sekarang, kita masuk ke bagian partisi. Seperti pada gambar dibawah ini, kita belum memiliki partisi apapun sebelumnya. Klik New Partition Table untuk mulai membuat partisi baru.
+9. Klik Continue.
+10. Disini, kita saya memiliki kapasitas 10 GB yang nantinya dibagi menjadi 2 partisi. Pada partisi pertama yaitu Swap Area digunakan oleh sistem sebagai memori cadangan jika sistem kehabisan memori dan pada partisi yang kedua yaitu Root untuk menyimpan data-data pribadi dan tempat Ubuntu terinstal. Untuk membuat sebuah partisi klik tanda plus (+).
+11. Pertama, kita akan membuat partisi Swap. Tentukan ukuran dari partisi ini sesuai keinginan Anda tetapi saya sarankan jangan terlalu besar. Disini ukuran Swap saya 1GB.  Kemudian, pilih “Primary” lalu pilih “Beginning of this space”. Di kotak Use as pilih “swap area”. Menurut saya, partisi swap area merupakan partisi yang sangat penting (harus ada). Lalu klik OK.<p>
+
+			<p>12. Hasilnya akan terlihat seperti pada gambar di bawah. Kemudian, pilih bagian yang free space, kemudian klik add atau tanda plus (+) seperti pada gambar.
+			13. Kedua, kita akan membuat partisi Root. Kemudian, pilih “Logical” lalu pilih “Beginning of this space”. Di kotak Use as pilih “Ext4 journaling file system” dan pada kotak Mount point pilih /. Klik OK
+			14. Hasilnya akan terlihat seperti pada gambar dibawah ini. Terdapat 2 buah partisi yaitu swap area dan /. Klik Install Now.
+			15. Klik Continue.
+			16. Untuk zona waktu, saya memilih Medan (lokasi dimana saya berada), lalu klik Continue
+			17. Pilih bahasa inputan keyboard disini saya memilih English (US).
+			18. Selanjutnya, isi data untuk user secara lengkap seperti pada gambar dibawah ini. Setelah selesai, klik Continue.
+			19. Tunggu sampai proses penginstalan dan penyalinan data sistem operasi selesai. Biasanya membutuhkan waktu sekitar 10-30 menit.
+			20. Setelah proses instalasi selesai. Klik Restart Now.
+			21. Nah, sekarang Anda sudah berhasil menginstal Ubuntu di laptop/PC Anda. Masukkan password yang sudah Anda buat tadi untuk masuk ke Ubuntu.<p>
